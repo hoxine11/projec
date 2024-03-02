@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="web icon" type="jpg" href="../New folder/hocine.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>le h</title>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <p><span>L</span>e h</p>
+        </div>
+        <div class="cont">
+            <nav>
+                <img src="" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">services</a></li>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </nav>
+            <div class="home">
+            <div class="header-txt">
+                <p>WEB DEVELOPER</p>
+                <h1>Hi , i'm <span>Elhoussein</span><br> from algeria</h1>
+            </div>
+            <div class="pt">
+                <img src="msg1745780223-161822.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        <div id="about">
+            <div class="cont">
+                <div class="row">
+                    <div class="abouteme">
+                        <div class="about-col3">
+                    <div class="about-col1">
+                        <img src="IMG_5410.JPG" alt="">
+                    </div>
+                    <div class="about-col2">
+                        <h1 class="tt">About Me</h1>
+                        <p class="par">Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Nesciunt, Fuga Reprehenderit! Dolores Ullam Tenetur Optio Exercitationem Soluta Ipsum Omnis Pariatur Suscipit Aspernatur Non, Ducimus Necessitatibus Explicabo Perferendis Repellendus Qui Magnam.wht does it mean
+
+                        </p>
+                    </div>
+                </div>
+                        <div class="tab">
+                            <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="content active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Devlopment</span><br>Html <br>Css</li>
+                                <li><span>Java</span></li>
+                                <li><span>Business</span><br>Trading on Spot <br>E-Commerce</li>
+                        </div>
+                        <div class="content" id="Experience">
+                            <ul>
+                                <li><span>2021</span><br>Year of obtaining a abccalaureatw degree </li>
+                                <li><span>2023</span><br>my first attempt in the web field</li>
+                        </div>
+                        <div class="content" id="Education">
+                            <ul>
+                                <li><span>2nd year Cs license</span></li>
+                        </div>  
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    <!-- ----------------contacts----------------  -->
+    <div id="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <div class="contactme">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i> 06272828</p>
+                     </div>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                </div>
+        </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="YourMessage"></textarea>
+                    <button type="submit" class="submit">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+    </script>
+</body>
+</html>
